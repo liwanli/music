@@ -1,7 +1,7 @@
 {
-  "name": "webpack-test",
+  "name": "vue-music",
   "version": "1.0.0",
-  "description": "",
+  "description": "vue-music",
   "scripts": {
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --config config/webpack.dev.conf.js",
@@ -16,9 +16,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/liwanli/webpack-test/issues"
+    "url": "https://github.com/liwanli/vue-music/issues"
   },
-  "homepage": "https://github.com/liwanli/webpack-test#readme",
+  "homepage": "https://github.com/liwanli/vue-music#readme",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",

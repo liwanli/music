@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-    entry: path.resolve(__dirname, "../src/index.js"),
+    entry: path.resolve(__dirname, "../src/main.js"),
     output: {
         filename: '[name].bundle.[hash:8].js'
     },
@@ -28,7 +28,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'my webpack test',
+            title: 'vue-music',
             filename: 'index.html',
             template: path.resolve(__dirname, "../index.html")
         }),
