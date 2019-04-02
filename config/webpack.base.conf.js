@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-    entry: path.resolve(__dirname, "../src/main.js"),
+    entry: path.resolve(__dirname, "../app/main.js"),
     output: {
         filename: '[name].bundle.[hash:8].js'
     },
@@ -21,7 +21,7 @@ module.exports = {
         rules:[
             {
                 test: /(\.jsx|\.js)$/,
-                use: { loader: "babel-loader"},
+                use: ["babel-loader"],
                 exclude: /node_modules/
             }
         ]
