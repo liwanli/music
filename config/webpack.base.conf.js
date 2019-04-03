@@ -11,10 +11,10 @@ module.exports = {
         filename: '[name].bundle.[hash:8].js'
     },
     resolve:{
-        extensions: [".js", ".json"],
+        extensions: [".js", ".json", ".vue"],
         alias:{
             vue$: 'vue/dist/vue.esm.js',
-            "@": path.join(__dirname, "src")
+            "@": path.resolve(__dirname, "app")
         }
     },
     module:{
