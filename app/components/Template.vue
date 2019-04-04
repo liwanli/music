@@ -1,22 +1,15 @@
 <template>
   <div class="psspd">
-    //<top></top>
     <div>
+      <span class="text">123</span>
       <router-view></router-view>
     </div>
-    //<foot></foot>
 
   </div>
 </template>
 <script>
-import top from "@/components/header.vue";
-import foot from "@/components/footer.vue";
-import SockJS from "sockjs-client";
-import Stomp from "stompjs";
 export default {
   components: {
-    top,
-    foot
   },
   data() {
     return {
@@ -24,28 +17,13 @@ export default {
     };
   },
   mounted() {
-    var user = localStorage.getItem("token");
-    //this.connection();
+   
   },
   beforeDestroy() {
   },
   created() {},
   methods: {
-    shareBox() {
-      if (this.contentType == 0) {
-        this.$router.push({
-          path: "/personalCenter/index",
-          query: { index: 1 }
-        });
-      }
-      if (this.contentType == 2) {
-        this.$router.push({
-          path: "/personalCenter/index",
-          query: { index: 2 }
-        });
-      }
-      this.centerDialogVisible = false;
-    }
+   
   }
 };
 </script>

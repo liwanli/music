@@ -5,9 +5,6 @@ const Template = r => require.ensure([], () => r(require('../components/template
 const Login = r => require.ensure([], () => r(require('../components/login.vue')), 'login')
 const Register = r => require.ensure([], () => r(require('../components/register.vue')), 'register')
 
-
-console.log(Template)
-return 
 const routers = [
 	{
 		name: "登录",
