@@ -26,29 +26,15 @@ module.exports = {
                 test: /(\.jsx|\.js)$/,
                 use: ["babel-loader"],
                 exclude: /node_modules/
-            },{
+            },
+            {
                 test:/\.vue$/,
                 use:["vue-loader"]
             },
             {
-                test: /\.scss$/,
-                use: [
-                    'vue-style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    'vue-style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: { importLoaders: 1 }
-                    },
-                    'postcss-loader'
-                  ]
-                }
+              test: /\.css$/,
+              use: [ 'style-loader', 'postcss-loader' ]
+            }
         ]
     },
     plugins: [

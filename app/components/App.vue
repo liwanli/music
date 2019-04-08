@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .text {
   color: #999999;
   font-size: 20px;
