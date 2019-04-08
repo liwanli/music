@@ -1,10 +1,16 @@
 <template>
-  <div class="psspd">
-    <div>
-      <span class="text">123</span>
-      <router-view></router-view>
+  <div class="m-home">
+    <div class="m-topbar">
+      <div class="topfix">
+        <h1 class="topfl">
+          <span class="topplh">网易云音乐</span>
+        </h1>
+        <div class="topfr">
+          <span class="f-bd f-bd-full topbton">下载APP</span>
+        </div>
+      </div>
     </div>
-
+    <router-view></router-view>
   </div>
 </template>
 <script>
@@ -13,50 +19,51 @@ export default {
   },
   data() {
     return {
-     
+
     };
   },
   mounted() {
-   
+
   },
   beforeDestroy() {
   },
   created() {},
   methods: {
-   
+
   }
 };
 </script>
-<style lang='scss' scoped>
-.text {
-  color: #999999;
-  font-size: 20px;
-  width: 249px;
-  text-align: center;
-  margin: 0 auto 16px;
-  font-family: "SourceHanSansCN-Light";
-  line-height: 30px;
+<style lang="scss" scoped>
+.m-home {
+    background-color: #fcfcfd;
+    min-height: 100%;
+    .m-topbar {
+        height: 64px;
+        .topfix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0 10px;
+            width: 100%;
+            height: 64px;
+            background-color: #d43c33;
+            box-sizing: border-box;
+        }
+        .topsvg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 142px;
+            height: 25px;
+        }
+    }
 }
-#cpLink {
-  color: #3963d0;
-  text-align: center;
-  border: none;
-  width: 100%;
-  outline: none;
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  resize: none;
-  font-family: "SourceHanSansCN-Light";
-}
-.copybtn {
-  width: 300px;
-  height: 42px;
-  background: rgba(57, 99, 208, 1);
-  border: none;
-  border-radius: 20px;
-  font-size: 18px;
-  font-family: MicrosoftYaHeiLight;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 1);
-}
+
 </style>
